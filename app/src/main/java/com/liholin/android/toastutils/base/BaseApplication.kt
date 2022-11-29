@@ -1,6 +1,7 @@
 package com.liholin.android.toastutils.base
 
 import android.app.Application
+import com.liholin.android.baselibrary.utils.toast.dtoast.DoToast
 
 /**
  ****************************************
@@ -15,6 +16,7 @@ open class BaseApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         instance = this
+        DoToast.init(instance)
     }
 
     companion object {
