@@ -116,7 +116,7 @@ ToastUtils.getInterceptor();
 
 #### 框架亮点
 
-* 一马当先：首款适配 Android 11 的吐司框架，使用者无需关心适配过程
+* 一马当先：适配 Android 11 的吐司框架，使用者无需关心适配过程
 
 * 无需权限：[不管有没有授予通知栏权限都不影响吐司的弹出](https://www.jianshu.com/p/1d64a5ccbc7c)
 
