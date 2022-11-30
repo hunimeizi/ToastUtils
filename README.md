@@ -36,7 +36,7 @@ android {
 }
 
 dependencies {
-    implementation 'io.github.hunimeizi:haolinToastUtils:1.0.0'
+    implementation 'io.github.hunimeizi:haolinToastUtils:2.0.0'
 }
 ```
 
@@ -58,60 +58,60 @@ public class XxxApplication extends Application {
 
 ```java
 // 显示 Toast
-ToastUtils.show(CharSequence text);
-ToastUtils.show(int id);
-ToastUtils.show(Object object);
+DoToast.show(CharSequence text);
+DoToast.show(int id);
+DoToast.show(Object object);
 
 // debug 模式下显示 Toast
-ToastUtils.debugShow(CharSequence text);
-ToastUtils.debugShow(int id);
-ToastUtils.debugShow(Object object);
+DoToast.debugShow(CharSequence text);
+DoToast.debugShow(int id);
+DoToast.debugShow(Object object);
 
 // 延迟显示 Toast
-ToastUtils.delayedShow(CharSequence text, long delayMillis);
-ToastUtils.delayedShow(int id, long delayMillis);
-ToastUtils.delayedShow(Object object, long delayMillis);
+DoToast.delayedShow(CharSequence text, long delayMillis);
+DoToast.delayedShow(int id, long delayMillis);
+DoToast.delayedShow(Object object, long delayMillis);
 
 // 显示短 Toast
-ToastUtils.showShort(CharSequence text);
-ToastUtils.showShort(int id);
-ToastUtils.showShort(Object object);
+DoToast.showShort(CharSequence text);
+DoToast.showShort(int id);
+DoToast.showShort(Object object);
 
 // 显示长 Toast
-ToastUtils.showLong(CharSequence text);
-ToastUtils.showLong(int id);
-ToastUtils.showLong(Object object);
+DoToast.showLong(CharSequence text);
+DoToast.showLong(int id);
+DoToast.showLong(Object object);
 
 // 自定义显示 Toast
-ToastUtils.show(ToastParams params);
+DoToast.show(ToastParams params);
 
 // 取消 Toast
-ToastUtils.cancel();
+DoToast.cancel();
 
 // 设置 Toast 布局（全局生效）
-ToastUtils.setView(int id);
+DoToast.setView(int id);
 
 // 设置 Toast 布局样式（全局生效）
-ToastUtils.setStyle(IToastStyle<?> style);
+DoToast.setStyle(IToastStyle<?> style);
 // 获取 Toast 布局样式
-ToastUtils.getStyle()
+DoToast.getStyle()
 
 // 判断当前框架是否已经初始化
-ToastUtils.isInit();
+DoToast.isInit();
 
 // 设置 Toast 策略（全局生效）
-ToastUtils.setStrategy(IToastStrategy strategy);
+DoToast.setStrategy(IToastStrategy strategy);
 // 获取 Toast 策略
-ToastUtils.getStrategy();
+DoToast.getStrategy();
 
 // 设置 Toast 重心和偏移
-ToastUtils.setGravity(int gravity);
-ToastUtils.setGravity(int gravity, int xOffset, int yOffset);
+DoToast.setGravity(int gravity);
+DoToast.setGravity(int gravity, int xOffset, int yOffset);
 
 // 设置 Toast 拦截器（全局生效）
-ToastUtils.setInterceptor(IToastInterceptor interceptor);
+DoToast.setInterceptor(IToastInterceptor interceptor);
 // 获取 Toast 拦截器
-ToastUtils.getInterceptor();
+DoToast.getInterceptor();
 ```
 
 #### 框架亮点
@@ -141,5 +141,5 @@ Toast\.makeText\([^,]+,\s*(.+),\s*[^,]+\)\.show\(\)
 ```
 
 ```text
-ToastUtils.show($1)
+DoToast.show($1)
 ```
