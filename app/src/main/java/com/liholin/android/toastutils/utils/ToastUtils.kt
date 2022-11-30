@@ -17,6 +17,7 @@ object ToastUtils {
     fun showToast(msg: String?) {
         val params = ToastParams()
         params.text = msg
+        //主要布局中 TextView的id 为 android:id="@android:id/message"
         params.style = CustomViewToastStyle(R.layout.common_mytoast_layout,
             Gravity.TOP,
             0,
